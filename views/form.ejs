@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auxano</title>
+</head>
+<body>
+    <div class="constainer">
+        <form action="/" method="post">
+          <label for="">Start Time</label>  <input type="textbox" name="startTime" placeholder="HH:MM:SS"> 
+           <label for="">End Time</label> <input type="textbox" name="endTime" placeholder="HH:MM:SS">
+            <input type="submit" value="Submit">
+        </form>
+        <% if(error) { %>
+        <div>
+           <p><%= error %> </p> 
+        </div>
+        <% } %>
+    </div>
+</body>
+</html>
