@@ -1,11 +1,10 @@
 const moment = require("moment")
 exports.timePage = async (req, res) => {
-    res.render("form", { error: null })
+    res.render("form", { error: null,data:null })
 }
 
 exports.time = async (req, res) => {
     let { startTime, endTime } = req.body
-    // let timePattern = startTime.match(/(\d{2}):(\d{2}):/gi)
 
     function isValidTime(duration) {
         let [hours, minutes, seconds] = duration.split(':')
